@@ -15,4 +15,5 @@ jobs:
           python-version: 3.8
       - name: execute python script
         run: |
+          pip install -r requirements.txt
           python data_parser.py
