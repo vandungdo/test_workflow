@@ -17,3 +17,12 @@ jobs:
         run: |
           pip install -r requirements.txt
           python data_parser.py
+  example_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v2
+      - name: execute example python script
+        run: |
+          python example_script.py
